@@ -78,6 +78,7 @@
   background-color: var(--button-bg);
   border: none;
   padding: 10px;
+  color: white;
   border-radius: 30px;
   font-size: 20px;
   top: 43%;
