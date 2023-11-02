@@ -23,7 +23,6 @@ img.setAttribute("height","100%");
 image_viewer.appendChild(img);
 let remove_img=document.createElement("button");
 remove_img.setAttribute("id","remove-img-button");
-remove_img.appendChild(document.createTextNode("R"));
 image_container.appendChild(image_viewer);
 let download_image=document.createElement("button");
 download_image.classList.add("download-image");
@@ -36,9 +35,9 @@ for(let i=0;i<9;i++)
 {
   let tool_container=document.createElement("div");
   tool_container.classList.add("tool-container");
-  let h3=document.createElement("h3");
+  let h3=document.createElement("span");
+  h3.style.fontSize="25px"
   let h3text=document.createTextNode(tools[i]);
-  
   h3.appendChild(h3text);
   tool_container.appendChild(h3);
   let input_field=document.createElement("div");

@@ -6,14 +6,13 @@
   *{
     margin: 0;
     padding: 0;
-    color: white;
     font-family: 'Poppins',sans-serif;
   }
   body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #bdc3c7;
   }
   .container{
     height: 100%;
@@ -22,9 +21,8 @@
   }
   .editor-container{
     margin: auto;
-
     width: 80%;
-    background-color:var(--background-color) ;
+    background-color:white;
   }
   .image-container{
     height: 400px;
@@ -32,13 +30,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid rgb(55, 55, 55);
+    border-bottom: 2px solid #bdc3c7;
     flex-direction: column;
  }
  .image-viewer{
   width: 500px;
   height: 80%;
- border:2px solid rgb(55, 55, 55);
+ border:2px solid #bdc3c7;
  border-radius: 2rem;
  display: flex;
  justify-content: center;
@@ -70,7 +68,7 @@
   background-position: center;
   background-size: cover;
   background-color: rgb(119, 119, 119);
-  border: 2px solid rgb(119, 119, 119);
+  
   cursor: pointer;
  }
  .buttons input{
@@ -85,8 +83,7 @@
   top: 43%;
   left: 35%;
   cursor: pointer;
-  color: black;
-  border: 2px solid var(--background-color);
+  border: 2px solid white;
 }
 @media only screen and (max-width:417px) {
   #select-image{
@@ -112,7 +109,7 @@
   transition: all 0.3s;
   color:var(--button-bg);
   border-color: var(--button-bg);
-  background-color: rgb(36, 36, 36);
+  background-color: white;
 }
 .tools-container{
   display: grid;
@@ -141,6 +138,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 5px;
+  color: #2c3e50;
 }
 #remove-img-button{
   border: none;
@@ -164,20 +162,20 @@
 .download-image{
   background-color:var(--button-bg);
   padding: 10px;
-  color: black;
+  color: white;
   border: none;
   margin-top: 10px;
   border-radius: 30px;
   font-size: 20px;
   cursor: pointer;
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--button-bg);
   display: none;
 }
 .download-image:hover{
   transition: all 0.3s;
   color:var(--button-bg);
   border-color: var(--button-bg);
-  background-color: rgb(36, 36, 36);
+  background-color: white;
 }
 .display-block{
   display: block;
